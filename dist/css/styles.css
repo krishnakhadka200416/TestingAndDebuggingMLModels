@@ -3022,7 +3022,7 @@ textarea.form-control-lg {
 }
 .btn-check:focus + .btn, .btn:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(41, 34, 37, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(238, 9, 121, 0.25);
 }
 .btn:disabled, .btn.disabled, fieldset:disabled .btn {
   pointer-events: none;
@@ -3031,32 +3031,32 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #476fb8;
-  border-color: #131112;
+  background-color: #ee0979;
+  border-color: #ee0979;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #293b74;
-  border-color: #090808;
+  background-color: #ca0867;
+  border-color: #be0761;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
-  background-color: #050505;
-  border-color: #040303;
-  box-shadow: 0 0 0 0.25rem rgba(9, 6, 7, 0.5);
+  background-color: #ca0867;
+  border-color: #be0761;
+  box-shadow: 0 0 0 0.25rem rgba(241, 46, 141, 0.5);
 }
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #050304;
-  border-color: #050304;
+  background-color: #be0761;
+  border-color: #b3075b;
 }
 .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.25rem rgba(14, 8, 11, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(241, 46, 141, 0.5);
 }
 .btn-primary:disabled, .btn-primary.disabled {
   color: #fff;
-  background-color: #000000;
-  border-color: #040203;
+  background-color: #ee0979;
+  border-color: #ee0979;
 }
 
 .btn-secondary {
@@ -11322,7 +11322,7 @@ header.masthead {
   overflow: hidden;
   padding-top: calc(7rem + 72px);
   padding-bottom: 7rem;
-  background: linear-gradient(0deg, #0b0742 0%, #000 100%);
+  background: linear-gradient(0deg, #ff6a00 0%, #ee0979 100%);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
@@ -11333,12 +11333,41 @@ header.masthead .masthead-content {
   position: relative;
 }
 header.masthead .masthead-content .masthead-heading {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 header.masthead .masthead-content .masthead-subheading {
-  font-size: 1rem;
+  font-size: 2rem;
 }
-
+header.masthead .bg-circle {
+  z-index: 0;
+  position: absolute;
+  border-radius: 100%;
+  background: linear-gradient(0deg, #ee0979 0%, #ff6a00 100%);
+}
+header.masthead .bg-circle-1 {
+  height: 90rem;
+  width: 90rem;
+  bottom: -55rem;
+  left: -55rem;
+}
+header.masthead .bg-circle-2 {
+  height: 50rem;
+  width: 50rem;
+  top: -25rem;
+  right: -25rem;
+}
+header.masthead .bg-circle-3 {
+  height: 20rem;
+  width: 20rem;
+  bottom: -10rem;
+  right: 5%;
+}
+header.masthead .bg-circle-4 {
+  height: 30rem;
+  width: 30rem;
+  top: -5rem;
+  right: 35%;
+}
 
 @media (min-width: 992px) {
   header.masthead {
