@@ -18,7 +18,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
             <div class="container px-5">
-                <a class="navbar-brand" href="#page-top">Testing and Debugging ML Models</a>
+                <a class="navbar-brand" href="#page-top">Testing & Debugging ML Models</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
@@ -48,18 +48,18 @@
                    
                         <br><br><br><br><br><br>
                       
-                            <h4 class="display-4" id = "about">  Testing and Debugging</h4>
+                            <h4 class="display-4" id = "about">Testing and Debugging</h4>
                    
                    
                     <div class="col-lg-6 order-lg-1">
                         
                            
                             <p>
-                                
-                                The training data may contain errors. In particular, some instances may have corrupted data or may be mislabeled. 
+                                Machine Learning techniques are used to perform data-driven decision-making. The machine learning models deal with voluminous amounts of data to train the model. 
+                                The training data may contain errors which leads to wrong predictions for some testing data.
+                                In particular, some instances may have corrupted data or may be mislabeled. 
                                 This could happen because mistakes could be made during the data collection or labeling process. 
-                                Since the training data are considered the ground truth by the learning algorithm, detecting errors in the training data 
-                                is critically important to ensure model quality.                              
+                                                            
                             </p>
                         
                     </div>
@@ -67,8 +67,11 @@
                         
                            
                             <p> 
-                                In order to detect possible incorrect training data, identify the training instances that are influential on incorrect model decision. 
-                                One approach to identify the buggy influential instances can be performed by influential analysis.               
+                                Since the training data are considered the ground truth by the learning algorithm, detecting errors in the training data 
+                                is critically important to ensure model quality.  
+                                In order to detect possible incorrect training data, identifying the training instances that are influential on incorrect model decision is important.  
+                                Testing and Debugging of machine learning models is the process of identifying buggy training data and correcting the model weights to make the correct prediction.
+                                One approach to identify the bugs in the training set can be performed by influential analysis.               
                             </p>    
                             
                     </div>
@@ -90,8 +93,9 @@
                             <p>
                               Machine learning models are ultimately a product of training data and deleting some influential training instances can affect the resulting model.
                               We call the training instances "influential" when their deletion from the training data considerably changes the parameters or predictions of the model. 
+                              Considering Regression Model, the line of best fit can be hugely impacted by an outlier. The outlier can possibly be a bug and have a huge influence on the training set. 
                               By identifying the influential training instances, we can "debug" the machine learning models and better explain their behaviors and predictions.   
-                                                        
+                             
                             </p>
                         
                     </div>
@@ -102,6 +106,7 @@
                         <p>
                             Influential analysis can be performed using influential functions, which uses a concept called upweighting to approximate the influence of an instance.
                             Upweighting allows parameter changes to be computed without retraining the model. Influential functions require differentiable models and can still be expensive to compute for large models.
+                            <br><br><br>
                         </p>
                             
                     </div>
