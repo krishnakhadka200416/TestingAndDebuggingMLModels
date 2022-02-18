@@ -521,6 +521,11 @@ progress {
   font-weight: 300;
   line-height: 1.2;
 }
+.display-14 {
+  font-size: calc(1rem + 2vw);
+  font-weight: 300;
+  line-height: 1.2;
+}
 @media (min-width: 1200px) {
   .display-4 {
     font-size: 3.5rem;
@@ -3046,7 +3051,9 @@ textarea.form-control-lg {
 }
 
 ul.list-style-none li {
-    list-style: none
+  color: #673AB7;
+  padding: 8px 0px;
+  display: block;
 }
 
 ul.list-style-none li a {
@@ -11491,3 +11498,4 @@ header.masthead .masthead-content .masthead-subheading {
     font-size: 4rem;
   }
 }
+
