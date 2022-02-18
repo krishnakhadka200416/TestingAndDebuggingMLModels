@@ -42,22 +42,37 @@
                 <div class="container px-5" style="margin-top: 7%;"> 
                     <div class="row gx-5 align-items-center">
                                         
-                            <h2 class="display-14"> Influential Instances</h2>
-                        
-                                <p>
+                               
+                            
+                            <h2 class="display-14">Influential Analysis</h2>
+                            <p>
                                 Machine learning models are ultimately a product of training data and deleting some influential training instances can affect the resulting model.
                                 We call the training instances "influential" when their deletion from the training data considerably changes the parameters or predictions of the model. 
                                 Considering Regression Model, the line of best fit can be hugely impacted by an outlier. The outlier can possibly be a bug and have a huge influence on the training set. 
-                                By identifying the influential training instances, we can "debug" the machine learning models and better explain their behaviors and predictions.   
-                                
+                                By identifying the influential training instances, we can "debug" the machine learning models and better explain their behaviors and predictions.
                                 </p>
-                                             
-                            
-                            <h2 class="display-14" style="margin-top: 1%;">Influential Analysis</h2>
-                            <p>
-                                Influential analysis can be performed using influential functions, which uses a concept called upweighting to approximate the influence of an instance.
-                                Upweighting allows parameter changes to be computed without retraining the model. Influential functions require differentiable models and can still be expensive to compute for large models.
+                                <p>
+                                    Influential analysis can be performed using influential functions, which uses a concept called upweighting to approximate the influence of an instance.
+                                    Upweighting allows parameter changes to be computed without retraining the model. Influential functions require differentiable models and can still be expensive to compute for large models.
+                                    
+                                </p>   
+                                
+                                
                                 <br><br><br>
+                            
+
+                            <h2 class="display-14"> Clustering Analysis</h2>
+                        
+                            <p>
+                                Another approach to debug machine learning models could be to train the model about faulty data points. Give the machine an ability to distinguish between faulty data points and correct data points.
+                                As there are numerous data points available, finding all the faulty data points is next to impossible. To overcome this obstacle, one can make clusters of faulty data points and correct data points.
+                                <br>
+                            </p>
+                                   
+                            <h2 class="display-14"> Differential Analysis</h2>
+                            <p>
+                                Differential Analysis helps to identify the internal features of the model that are responsible for model bugs. In Deep Neural Networks, differential analysis is performed to identify neurons that are responsible for misclassification.
+                                Then a new input samples can be used for retraining the faulty neurons.
                             </p>
                                 
                     
@@ -68,7 +83,7 @@
     
 
         
-        <footer class="py-5 bg-black">
+        <footer class="py-5 bg-black" style="margin-top: 5%;">
             <div class="container px-5"><p class="m-0 text-center text-white small">Copyright &copy; Testing And Debugging Machine Learning Models 2022</p></div>
         </footer>
         <!-- Bootstrap core JS-->
