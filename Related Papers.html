@@ -1,217 +1,184 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Testing and Debugging Machine Learning Models</title>
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
-        
-        <!-- Google fonts-->
-
-
-        <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="styles.css" rel="stylesheet" />
-        <style>
-            a:link {
-              color: blue;
-              background-color: transparent;
-              text-decoration: none;
-            }
-            a:visited {
-                color: rgb(8, 57, 170);
-                background-color: transparent;
-                text-decoration: none;
-            }
-            </style>
-    </head>
-  
-    <body id="page-top">
-             <!-- Navigation-->
-             <section>
-
-                <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top"  style="background-color: black;">
-                    <div class="container px-5">
-                        <a class="navbar-brand" href="#page-top">Testing & Debugging ML Models</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                        <div class="collapse navbar-collapse" id="navbarResponsive">
-                            <ul class="navbar-nav ms-auto">
-                                <li class="nav-item"><a class="nav-link" href="./index.html">ABOUT</a></li>
-                                <li class="nav-item"><a class="nav-link" href="./Related Papers.html">Related Papers</a></li>
-                                <li class="nav-item"><a class="nav-link" href="./Approaches.html">APPROACHES</a></li>
-                                <li class="nav-item"><a class="nav-link" href="./Literature Review.html">Process</a></li>
-                                <li class="nav-item"><a class="nav-link" href="./Software_Tools.html">Software Tools</a></li>
-                                <li class="nav-item"><a class="nav-link" href="./Connect.html">CONNECT</a></li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </section>
-        <section id = "resources">
-            <div class="container px-5">
-                <div class="row gx-5 align-items-center">
-                    <div class="row d-flex justify-content-center mt-100 mb-100">
-
-                        <h4>Influential Analysis</h4>
-                        <style type="text/css">
-                            .tg  {border-collapse:collapse;border-spacing:0;}
-                            .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-                              overflow:hidden;padding:10px 5px;word-break:normal;}
-                            .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-                              font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-                            .tg .tg-0lax{text-align:left;vertical-align:top}
-                            </style>
-                            <table class="tg">
-                            <thead>
-                              <tr>
-                                <th class="tg-0lax">Title</th>
-                                <th class="tg-0lax">Authors </th>
-                                <th class="tg-0lax">Conference/Journal</th>
-                                <th class="tg-0lax">Year</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td class="tg-0lax"><a href="http://proceedings.mlr.press/v70/koh17a"  target="_blank" >Understanding Black-box Predictions via Influence Functions</a></td>
-                                <td class="tg-0lax">Pang Wei Koh, Percy Liang Proceedings of the 34th International Conference on Machine Learning, PMLR 70:1885-1894, 2017..</td>
-                                <td class="tg-0lax">PENDING</td>
-                                <td class="tg-0lax">2017</td>
-                              </tr>
-                              <tr>
-                                <td class="tg-0lax"><a href="https://www.tandfonline.com/doi/abs/10.1080/00401706.1977.10489493?casa_token=xTUeAgt1x9gAAAAA:_YGO1P71vmQtojIVhPmtjjj_Qi1-X6UicMb4HG-W_FEqHgvlhueeehiE2Fzn_pBdB3BbRerSdFHMZQ"  target="_blank" >Detection of Influential Observation in Linear Regression</a></td>
-                                <td class="tg-0lax">R. Dennis CookDepartment of Applied Statistics , University of Minnesota , St. Paul , Minnesota , 55108.  Published online: 05 Jan 5187</td>
-                                <td class="tg-0lax">PENDING</td>
-                                <td class="tg-0lax">PENDING</td>
-                              </tr>
-                              <tr>
-                                <td class="tg-0lax"><a href="https://scholar.google.com/scholar?hl=en&as_sdt=0%2C44&q=%22Influence+Sketching%22%3A+Finding+Influential+Samples+In+Large-Scale+Regressions&btnG=" target="_blank" class="m-b-0 font-medium p-0" data-abc="true">"Influence Sketching": Finding Influential Samples In Large-Scale Regressions</a></td>
-                                <td class="tg-0lax">Mike Wojnowicz,
-                                    Ben Cruz,
-                                    Xuan Zhao,
-                                    Brian Wallace,
-                                    Matt Wolff,
-                                    Jay Luan,
-                                    Caleb Crable</td>
-                                <td class="tg-0lax">PENDING</td>
-                                <td class="tg-0lax">PENDING</td>
-                              </tr>
-
-                            </tbody>
-                            </table>
-
-
-                            <div style="width:100%;height:100px;"></div> 
-
-                            <h4>Differential Analysis</h4>
-                            <style type="text/css">
-                                .tg  {border-collapse:collapse;border-spacing:0;}
-                                .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-                                  overflow:hidden;padding:10px 5px;word-break:normal;}
-                                .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-                                  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-                                .tg .tg-0lax{text-align:left;vertical-align:top}
-                                </style>
-                                <table class="tg">
-                                <thead>
-                                  <tr>
-                                    <th class="tg-0lax">Title</th>
-                                    <th class="tg-0lax">Authors </th>
-                                    <th class="tg-0lax">Conference/Journal</th>
-                                    <th class="tg-0lax">Year</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td class="tg-0lax"><a href="https://scholar.google.com/scholar?hl=en&as_sdt=0%2C44&q=Automated+Neural+Network+Model+Debugging+via+State+Differential+Analysis+and+Input+Selection&btnG="  target="_blank" >Automated Neural Network Model Debugging via State Differential Analysis and Input Selection</a></td>
-                                    <td class="tg-0lax">Shiqing Ma Purdue University, USA,
-                                        
-                                        Yingqi Liu
-                                        Purdue University, USA
-                                        
-                                        Wenchuan Lee
-                                        Purdue University, USA
-                                        
-                                        Xiangyu Zhang
-                                        Purdue University, USA
-                                        
-                                        Ananth Y Grama
-                                        Purdue University, USA</td>
-                                    <td class="tg-0lax">PENDING</td>
-                                    <td class="tg-0lax">2017</td>
-                                  </tr>
-    
-                                </tbody>
-                                </table>
-
-
-                                <div style="width:100%;height:100px;"></div> 
-
-                                <h4>Others</h4>
-                                <style type="text/css">
-                                    .tg  {border-collapse:collapse;border-spacing:0;}
-                                    .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-                                      overflow:hidden;padding:10px 5px;word-break:normal;}
-                                    .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-                                      font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-                                    .tg .tg-0lax{text-align:left;vertical-align:top}
-                                    </style>
-                                    <table class="tg">
-                                    <thead>
-                                      <tr>
-                                        <th class="tg-0lax">Title</th>
-                                        <th class="tg-0lax">Authors </th>
-                                        <th class="tg-0lax">Conference/Journal</th>
-                                        <th class="tg-0lax">Year</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
-                                        <td class="tg-0lax"><a href="https://scholar.google.com/scholar?hl=en&as_sdt=0%2C44&q=Training+Set+Debugging+Using+Trusted+Items&btnG=" target="_blank">Training Set Debugging Using Trusted Items</a></td>
-                                        <td class="tg-0lax">Xuezhou Zhang
-                                            University of Wisconsin-Madison
-                                            Xiaojin Zhu
-                                            University of Wisconsin-Madison
-                                            Stephen Wright
-                                            University of Wisconsin-Madison</td>
-                                        <td class="tg-0lax">PENDING</td>
-                                        <td class="tg-0lax">PENDING</td>
-                                      </tr>
-                                      <tr>
-                                        <td class="tg-0lax"><a href="https://scholar.google.com/scholar?hl=en&as_sdt=0%2C44&q=Debugging+Machine+Learning+Tasks&btnG="  target="_blank">Debugging Machine Learning Tasks</a></td>
-                                        <td class="tg-0lax">Aleksandar Chakarov, Aditya Nori, Sriram Rajamani, Shayak Sen, Deepak Vijaykeerthy</td>
-                                        <td class="tg-0lax">PENDING</td>
-                                        <td class="tg-0lax">PENDING</td>
-                                      </tr>
-                                      
-        
-                                    </tbody>
-                                    </table>
-
-
-
-
-
-
-                      
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-        <footer class="py-5 bg-black" style="margin-top: 20%;">
-            <div class="container px-5"><p class="m-0 text-center text-white small">Copyright &copy; Testing And Debugging Machine Learning Models 2022</p></div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
-
-
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>Testing and Debugging Machine Learning Models</title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2022.2">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 15.0px 'Helvetica Neue'; color: #ffffff; color: rgba(255, 255, 255, 0.55); -webkit-text-stroke: rgba(255, 255, 255, 0.55)}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Arial; color: #131518; -webkit-text-stroke: #131518}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Arial; color: #0000e9; -webkit-text-stroke: #0000ff}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'Helvetica Neue'; color: #242424; -webkit-text-stroke: #242424}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #131518; -webkit-text-stroke: #131518}
+    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.5px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff}
+    span.s1 {font-kerning: none; background-color: #000000}
+    span.s2 {font-kerning: none}
+    span.s3 {text-decoration: underline ; font-kerning: none}
+    span.s4 {font-kerning: none; background-color: #ffffff}
+    table.t1 {padding: 0.0px 9.0px 0.0px 9.0px; border-collapse: collapse}
+    td.td1 {width: 175.7px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 10.0px 5.0px 10.0px 5.0px}
+    td.td2 {width: 281.4px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 10.0px 5.0px 10.0px 5.0px}
+    td.td3 {width: 133.2px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 10.0px 5.0px 10.0px 5.0px}
+    td.td4 {width: 74.8px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 10.0px 5.0px 10.0px 5.0px}
+    td.td5 {width: 170.1px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 10.0px 5.0px 10.0px 5.0px}
+    td.td6 {width: 319.6px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 10.0px 5.0px 10.0px 5.0px}
+    td.td7 {width: 42.2px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 10.0px 5.0px 10.0px 5.0px}
+    td.td8 {width: 120.6px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 10.0px 5.0px 10.0px 5.0px}
+    td.td9 {width: 336.4px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 10.0px 5.0px 10.0px 5.0px}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1"><b>TESTING &amp; DEBUGGING ML MODELS</b></span></p>
+<p class="p2"><span class="s2"><br>
+</span></p>
+<h4 style="margin: 0.0px 0.0px 6.0px 0.0px; font: 17.7px 'Helvetica Neue'; color: #131518; -webkit-text-stroke: #131518"><span class="s2"><b>Influential Analysis</b></span></h4>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="top" class="td1">
+        <p class="p4"><span class="s2">Title</span></p>
+      </td>
+      <td valign="top" class="td2">
+        <p class="p4"><span class="s2">Authors<span class="Apple-converted-space"> </span></span></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p4"><span class="s2">Conference/Journal</span></p>
+      </td>
+      <td valign="top" class="td4">
+        <p class="p4"><span class="s2">Year</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td1">
+        <p class="p5"><span class="s3"><a href="http://proceedings.mlr.press/v70/koh17a">Understanding Black-box Predictions via Influence Functions</a></span></p>
+      </td>
+      <td valign="top" class="td2">
+        <p class="p4"><span class="s2">Pang Wei Koh, Percy Liang Proceedings of the 34th International Conference on Machine Learning, PMLR 70:1885-1894, 2017..</span></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p6"><span class="s4"><i>34th International Conference on Machine Learning</i>, </span></p>
+      </td>
+      <td valign="top" class="td4">
+        <p class="p4"><span class="s2">2017</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td1">
+        <p class="p5"><span class="s3"><a href="https://www.tandfonline.com/doi/abs/10.1080/00401706.1977.10489493?casa_token=xTUeAgt1x9gAAAAA:_YGO1P71vmQtojIVhPmtjjj_Qi1-X6UicMb4HG-W_FEqHgvlhueeehiE2Fzn_pBdB3BbRerSdFHMZQ">Detection of Influential Observation in Linear Regression</a></span></p>
+      </td>
+      <td valign="top" class="td2">
+        <p class="p4"><span class="s2">R. Dennis CookDepartment of Applied Statistics , University of Minnesota , St. Paul , Minnesota , 55108. Published online: 05 Jan 5187</span></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p4"><span class="s2">PENDING</span></p>
+      </td>
+      <td valign="top" class="td4">
+        <p class="p4"><span class="s2">PENDING</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td1">
+        <p class="p5"><span class="s3"><a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C44&amp;q=%22Influence+Sketching%22%3A+Finding+Influential+Samples+In+Large-Scale+Regressions&amp;btnG=">"Influence Sketching": Finding Influential Samples In Large-Scale Regressions</a></span></p>
+      </td>
+      <td valign="top" class="td2">
+        <p class="p4"><span class="s2">Mike Wojnowicz, Ben Cruz, Xuan Zhao, Brian Wallace, Matt Wolff, Jay Luan, Caleb Crable</span></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p4"><span class="s2">PENDING</span></p>
+      </td>
+      <td valign="top" class="td4">
+        <p class="p4"><span class="s2">PENDING</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p7"><span class="s2"><br>
+</span></p>
+<h4 style="margin: 0.0px 0.0px 6.0px 0.0px; font: 17.7px 'Helvetica Neue'; color: #131518; -webkit-text-stroke: #131518"><span class="s2"><b>Differential Analysis</b></span></h4>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><span class="s2">Title</span></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><span class="s2">Authors<span class="Apple-converted-space"> </span></span></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p4"><span class="s2">Conference/Journal</span></p>
+      </td>
+      <td valign="top" class="td7">
+        <p class="p4"><span class="s2">Year</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p5"><span class="s3"><a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C44&amp;q=Automated+Neural+Network+Model+Debugging+via+State+Differential+Analysis+and+Input+Selection&amp;btnG=">Automated Neural Network Model Debugging via State Differential Analysis and Input Selection</a></span></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><span class="s2">Shiqing Ma Purdue University, USA, Yingqi Liu Purdue University, USA Wenchuan Lee Purdue University, USA Xiangyu Zhang Purdue University, USA Ananth Y Grama Purdue University, USA</span></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p4"><span class="s2">PENDING</span></p>
+      </td>
+      <td valign="top" class="td7">
+        <p class="p4"><span class="s2">2017</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p7"><span class="s2"><br>
+</span></p>
+<h4 style="margin: 0.0px 0.0px 6.0px 0.0px; font: 17.7px 'Helvetica Neue'; color: #131518; -webkit-text-stroke: #131518"><span class="s2"><b>Others</b></span></h4>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="top" class="td8">
+        <p class="p4"><span class="s2">Title</span></p>
+      </td>
+      <td valign="top" class="td9">
+        <p class="p4"><span class="s2">Authors<span class="Apple-converted-space"> </span></span></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p4"><span class="s2">Conference/Journal</span></p>
+      </td>
+      <td valign="top" class="td4">
+        <p class="p4"><span class="s2">Year</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td8">
+        <p class="p5"><span class="s3"><a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C44&amp;q=Training+Set+Debugging+Using+Trusted+Items&amp;btnG=">Training Set Debugging Using Trusted Items</a></span></p>
+      </td>
+      <td valign="top" class="td9">
+        <p class="p4"><span class="s2">Xuezhou Zhang University of Wisconsin-Madison Xiaojin Zhu University of Wisconsin-Madison Stephen Wright University of Wisconsin-Madison</span></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p4"><span class="s2">PENDING</span></p>
+      </td>
+      <td valign="top" class="td4">
+        <p class="p4"><span class="s2">PENDING</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td8">
+        <p class="p5"><span class="s3"><a href="https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C44&amp;q=Debugging+Machine+Learning+Tasks&amp;btnG=">Debugging Machine Learning Tasks</a></span></p>
+      </td>
+      <td valign="top" class="td9">
+        <p class="p4"><span class="s2">Aleksandar Chakarov, Aditya Nori, Sriram Rajamani, Shayak Sen, Deepak Vijaykeerthy</span></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p4"><span class="s2">PENDING</span></p>
+      </td>
+      <td valign="top" class="td4">
+        <p class="p4"><span class="s2">PENDING</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p8"><span class="s1">Copyright © Testing And Debugging Machine Learning Models 2022</span></p>
+</body>
 </html>
