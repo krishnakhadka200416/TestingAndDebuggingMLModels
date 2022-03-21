@@ -11468,7 +11468,7 @@ header.masthead {
   overflow: hidden;
   padding-top: calc(7rem + 72px);
   padding-bottom: 7rem;
-  background: linear-gradient(0deg, #0b0742 0%, #000 100%);
+  background: linear-gradient(0deg,	#333333 0%, #000 100%);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
