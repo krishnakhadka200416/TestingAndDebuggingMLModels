@@ -26,7 +26,7 @@
                             <ul class="navbar-nav ms-auto">
                                 <li class="nav-item"><a class="nav-link" href="./index.html">ABOUT</a></li>
                                 <li class="nav-item"><a class="nav-link" href="./Related Papers.html">Related Papers</a></li>
-                                <!-- <li class="nav-item"><a class="nav-link" href="./Approaches.html">APPROACHES</a></li> -->
+                                <li class="nav-item"><a class="nav-link" href="./Approaches.html">APPROACHES</a></li>
                                 <li class="nav-item"><a class="nav-link" href="./Literature Review.html">Process</a></li>
                                 <li class="nav-item"><a class="nav-link" href="./Software_Tools.html">Software Tools</a></li>
                                 <li class="nav-item"><a class="nav-link" href="./Connect.html">CONNECT</a></li>
@@ -47,15 +47,135 @@
                            
                             <div class="card-body text-center">
                                  <h4 class="card-title m-b-0" >Helpful Software Tools for Debugging</h4>            
-    
                             </div>
+
                             <div>
                                 <p>
-                                    Here are some great Built-in tools that can help you test, debug, and maintain your machine learning project to improve efficiently. 
+                                    Here are some great Built-in tools that can help you test, debug, and maintain your machine learning project to improve efficiently. The tools are divided into sections to inform what they are used for.
+                                     
                                 </p>
-                            </div>
-                            <div>
-                                <p>
+
+                                <ul>
+
+
+                                    <li style="font-size:20px"><strong>Dataset Preparation:</strong></li>
+                                    <p>Validate data quality, ensuring good quality data split equally between training and testing and test engineered data using unit testing. Here are some tools for both data validation and unit data testing</p>
+                                    
+                                    <br>
+                                    <h5><a href="https://github.com/pyeve/cerberus"  target="_blank" style="color:darkblue">Cerberus</a></h5>
+                                    <ul>
+                                        <li>
+                                            A lightweight and extensible data validation library for Python.
+                                        </li>
+                                        <li>
+                                            Cerberus provides type checking and other base functionality out of the box and is designed to be non-blocking and easily and widely extensible, allowing for custom validation. It has no dependencies, but has the potential to become yours.
+
+                                        </li>
+                                    </ul>
+                                    <br>
+
+                                 
+                                    <h5><a href="https://github.com/awslabs/deequ"  target="_blank" style="color:darkblue">Deequ</a></h5>
+                                    <ul>
+                                        <li>
+                                            Deequ is a library built on top of Apache Spark for defining "unit tests for data", which measure data quality in large datasets.
+                                        </li>
+                                        <li>
+                                            Deequ's purpose is to "unit-test" data to find errors early, before the data gets fed to consuming systems or machine learning algorithms.
+                                        </li>
+                                    </ul>
+                                    <br>
+
+                                   
+                                    <h5><a href="https://griffin.apache.org/"  target="_blank" style="color:darkblue">Griffin</a></h5>
+                                    <ul>
+                                        <li>
+                                            Data quality assertion tool with a unified process to measure data quality from different perspectives
+                                        </li>
+                                        <li>
+                                            Check for data completeness, accuracy, quality based on defined requirements. 
+                                        </li>
+                                    </ul>
+                                    <br>
+                                    
+
+
+
+                                    
+                                    <li style="font-size:20px"><strong>Model building:</strong></li>
+                                    <p>Interpreting incorrect predictions provides a direction for fixing the model. Reasons are due to debugging errors and predicting edge cases. Here are some tools for model interpretation:</p>
+
+
+
+                                    <br>
+                                    <h5><a href="https://www.seldon.io/solutions/open-source-projects/alibi-explain"  target="_blank" style="color:darkblue">Alibi</a></h5>
+                                    <ul>
+                                        <li>
+                                            Alibi is an open-source library that enables model inspection and interpretation. 
+                                        </li>
+                                        <li>
+                                            It lets you closely inspect model performance with respect to concept drift and algorithmic bias.
+                                        </li>
+                                    </ul>
+                                    <br>
+
+                                 
+                                    <h5><a href="https://captum.ai/"  target="_blank" style="color:darkblue">Captum</a></h5>
+                                    <ul>
+                                        <li>
+                                            Supports models for vision, text, and more. 
+                                        </li>
+                                        <li>
+                                            It has Integrated Gradients, so it tries to explain the model in terms of features contributing to model output.
+                                        </li>
+                                    </ul>
+                                    <br>
+
+                                    <h5><a href="https://interpret.ml/"  target="_blank" style="color:darkblue">InterpretML</a></h5>
+                                    <ul>
+                                        <li>
+                                            Open-source toolkit with state-of-the-art techniques to explain model behavior. 
+                                        </li>
+                                        <li>
+                                            Use to debug models, explain predictions and much more! 
+                                        </li>
+                                    </ul>
+                                    <br>
+
+
+                                    <h5><a href="https://github.com/marcotcr/lime"  target="_blank" style="color:darkblue">LIME</a></h5>
+                                    <ul>
+                                        <li>
+                                            Lime is able to explain any black box classifier, with two or more classes. 
+                                        </li>
+                                        <li>
+                                           Requires that the classifier implements a function that takes in raw text or a numpy array and outputs a probability for each class.
+                                        </li>
+                                    </ul>
+                                    <br>
+
+                                    <h5><a href="https://github.com/ModelOriented/DALEX"  target="_blank" style="color:darkblue">DALEX</a></h5>
+                                    <ul>
+                                        <li>
+                                            Analyze any model and helps to explore and explain its behaviour, helps to understand how complex models are working. 
+                                        </li>
+                                        <li>
+                                            DALEX is an explainer. It creates a wrapper around a predictive model and these wrapped models can then use to explored and compared against other local or global explainers
+                                        </li>
+                                    </ul>
+                                    <br>
+                                    
+
+                                    <li style="font-size:20px"><strong>Prediction-centric debugging for ML models:</strong></li>
+                                  
+                                    <p>
+                                        Visual debugging tools that help us look beyond the metrics, with features like performance comparisons, 
+                                        feature distribution over a dataset, and much more. Here are some tools for model interpretation:
+                                    </p>
+
+                          
+                                    <br>
+
                                     <h5><a href="https://github.com/microsoft/tensorwatch"  target="_blank" style="color:darkblue" >Tensor Watch</a></h5>
                                     <ul>
                                         <li>
@@ -67,6 +187,38 @@
                                         </li>
     
                                     </ul>
+                                    <br>
+
+                                    <h5><a href="https://arxiv.org/pdf/1808.00196.pdf"  target="_blank" style="color:darkblue">Manifold</a></h5>
+                                    <ul>
+                                        <li>
+                                            This tool enables end users to partition instances based on model correctness and confidence, identify instances that generate incorrect results, explain the reasons for the incorrect results and lastly improve the model performance. 
+                                        </li>
+                                    </ul>
+
+                                    <br>
+
+                             
+
+                                    <h5><a href="https://www.efemarai.com/"  target="_blank" style="color:darkblue">Efemarai</a></h5>
+                                    <ul>
+                                        <li>
+                                            a unique Python tool for visualizing, inspecting, and debugging 
+                                        </li>
+                                        <li>
+                                            It can be used for investigating explainability, robustness, and more, apart from the basic usage.
+                                        </li>
+                                    </ul>
+
+                                    <br>
+
+
+
+
+                                    <li style="font-size:20px"><strong>Here are some other useful tools: </strong></li>
+
+                                    <br>
+
 
                                     <h5><a href="https://deepkit.ai/"  target="_blank" style="color:darkblue">DeepKit</a></h5>
                                     <ul>
@@ -77,19 +229,13 @@
                                         <li>
                                             A recorder is also included to allow users to record multiple snapshots of the model at different states.
                                         </li>
-    
                                     </ul>
+                                    <br>
 
 
-                                    </ul>
+
                                     
-                                    <h5><a href="https://arxiv.org/pdf/1808.00196.pdf"  target="_blank" style="color:darkblue">Manifold</a></h5>
-                                    <ul>
-                                        <li>
-                                            This tool enables end users to partition instances based on model correctness and confidence, identify instances that generate incorrect results, explain the reasons for the incorrect results and lastly improve the model performance. 
-                                        </li>
-                                    </ul>
-
+                                    
                                     
 
 
@@ -101,6 +247,7 @@
                                         </li>
                                     </ul>
 
+                                    <br>
                                     <h5><a href="https://towardsdatascience.com/linear-regression-models-and-influential-points-4ee844adac6d"  target="_blank" style="color:darkblue">Influential Points</a></h5>
                                     <ul>
                                         <li>
@@ -108,7 +255,31 @@
                                         </li>
                                     </ul>
 
-                                    <h6><a href="https://towardsdatascience.com/5-tools-to-maintain-your-machine-learning-projects-efficiently-1761df2d7023#:~:text=One%20of%20these%20tools%20is,in%20your%20application%20during%20runtime."  target="_blank" style="color:darkblue;" >Reference Link </a></h6>
+                                  </ul>  
+
+                            </div>
+                            
+
+                            <div>
+                                <p>
+
+
+                                    
+                                    <h6>References</h6>
+                                    <ul>
+                                        <li>                                    <h6><a href="https://towardsdatascience.com/5-tools-to-maintain-your-machine-learning-projects-efficiently-1761df2d7023#:~:text=One%20of%20these%20tools%20is,in%20your%20application%20during%20runtime."  target="_blank" style="color:darkblue;" >towardsdatascience </a></h6>
+                                        </li>
+                                        <li>
+                                            <h6><a href="https://neptune.ai/blog/ml-model-debugging-and-tools"  target="_blank" style="color:darkblue;" >neptune </a></h6>
+                                        </li>
+                                    </ul>
+                                    
+
+
+
+
+
+
                                 </p>
                                 <p>
                             </div>
