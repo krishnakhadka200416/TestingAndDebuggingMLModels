@@ -57,10 +57,18 @@
                 <div class="row gx-5 align-items-center">
                     <div class="row d-flex justify-content-center mt-100 mb-100">
                         <p>
-                          The papers listed below are categorized based on different debugging techniques. We searched keywords related to the testing and debugging machine learning models and went through the abstract of each paper. We then shortlisted those papers that relate to our topic of interest. On the 
-                          <a href="./Literature Review.html">Process</a> page, we have more information about the related paper search process.       </p>
-                        
-                          <h4>Survey</h4>
+                          The different sections of the papers are:
+                        </p>
+                          
+                          <ul>
+                            <li><a href = "#survey">Survey</a></li>
+                            <li><a href = "#Influential">Influential Analysis</a></li>
+                            <li><a href = "#Differential">Differential Analysis</a></li>
+                            <li><a href = "#Others">Others</a></li>
+                          </ul>  
+                          
+
+                          <h4><a id = "survey">Survey</a></h4>
                           <p>
 
                             The following papers address existing solutions for testing ML models, and give recommendations of future research directions. 
@@ -112,7 +120,7 @@
                               </tbody>
                             </table>
                             <div style="width:100%;height:100px;"></div> 
-                        <h4>Influential Analysis</h4>
+                        <h4><a id = "Influential">Influential Analysis</a></h4>
                         <p>
                           Influential analysis identifies the training instances most responsible for the given misprediction on the testing instance. Outliers and misclassification in the training instances are some possible influential instances. 
                           Identification of those influential points can help debug the ML model by removing them or altering their labels. 
@@ -140,7 +148,7 @@
                               <tr>
                                 <td class="tg-0lax"><a href="http://proceedings.mlr.press/v70/koh17a"  target="_blank" >Understanding Black-box Predictions via Influence Functions</a></td>
                                 <td class="tg-0lax">Pang Wei Koh, Percy Liang</td>
-                                <td class="tg-0lax">34th International Conference on Machine Learning</td>
+                                <td class="tg-0lax">International Conference on Machine Learning</td>
                                 <td class="tg-0lax">2017</td>
                                 <td class="tg-0lax">1885-1894</td>
                               </tr>
@@ -182,7 +190,7 @@
 
                             <div style="width:100%;height:100px;"></div> 
 
-                            <h4>Differential Analysis</h4>
+                            <h4><a id = "Differential">Differential Analysis</a></h4>
                             <p>
                               Differential Analysis helps to identify the internal features of the model that are responsible for model bugs.
                               In Deep Neural Networks, differential analysis is performed to identify neurons that are responsible for misclassification. Then a new input samples can be used for retraining the faulty neurons.
@@ -211,7 +219,7 @@
                                     <td class="tg-0lax"><a href="https://scholar.google.com/scholar?hl=en&as_sdt=0%2C44&q=Automated+Neural+Network+Model+Debugging+via+State+Differential+Analysis+and+Input+Selection&btnG="  target="_blank" >Automated Neural Network Model Debugging via State Differential Analysis and Input Selection</a></td>
                                     <td class="tg-0lax">Ma, S., Liu, Y., Lee, W. C., Zhang, X., & Grama, A.
                                        </td>
-                                    <td class="tg-0lax">26th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering</td>
+                                    <td class="tg-0lax">ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering</td>
                                     <td class="tg-0lax">2018</td>
                                     <td class="tg-0lax">175-186</td>
                                   </tr>
@@ -224,7 +232,7 @@
 
                                 <div style="width:100%;height:100px;"></div>
 
-                                <h4>Others</h4>
+                                <h4><a id = "Others">Others</a></h4>
                                 <style type="text/css">
                                     .tg  {border-collapse:collapse;border-spacing:0;}
                                     .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -286,11 +294,13 @@
 
 
 
-
-
-                      
                     </div>
-                    
+                      
+                    <p>
+                      More information about the related paper search process can be found 
+                      <a href="./Literature Review.html">here</a> .  </p>
+
+      
                 </div>
             </div>
         </section>
