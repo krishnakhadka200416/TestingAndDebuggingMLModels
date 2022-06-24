@@ -1,111 +1,300 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-.ex1 {
-  margin-left: 50px;
-}
-
-.ex2 {
-  margin-left: 71px;
-}
-
-p {
-  text-indent: 15px;
-}
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<title>Testing and Debugging Machine Learning Models</title>
+	<!-- Font Awesome icons (free version)-->
+	<script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+	
+	<!-- Google fonts-->
 
 
-a:link, a:visited {
-  
-  color: blue;
-  padding: 5px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
-
-a:hover, a:active {
-  background-color: yellow;
-}
-</style>
+	<link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
+	<!-- Core theme CSS (includes Bootstrap)-->
+	<link href="styles.css" rel="stylesheet" />
+	<style>
+		a:link {
+		  color: blue;
+		  background-color: transparent;
+		  text-decoration: none;
+		}
+		a:visited {
+			color: rgb(8, 57, 170);
+			background-color: transparent;
+			text-decoration: none;
+		}
+		</style>
 </head>
-<body>
 
-<h1 class="ex2"><b><center><b>Influence Analysis</b></center></b></h1>
+<body id="page-top">
+	<section>
+
+		<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top"  style="background-color: black;">
+			<div class="container px-5">
+				<a class="navbar-brand" href="#page-top">Testing & Debugging ML Models</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item"><a class="nav-link" href="./index.html">ABOUT</a></li>
+						<li class="nav-item"><a class="nav-link" href="./Related Papers.html">Papers</a></li>
+						<!-- <li class="nav-item"><a class="nav-link" href="./Approaches.html">APPROACHES</a></li> -->
+						<!-- <li class="nav-item"><a class="nav-link" href="./Literature Review.html">Process</a></li> -->
+						<li class="nav-item"><a class="nav-link" href="./Software_Tools.html">Software Tools</a></li>
+						<li class="nav-item"><a class="nav-link" href="./Connect.html">CONNECT</a></li>
+
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</section>
+<section id = "resources">
+
+	<div class="container px-5">
+		<div class="row gx-5 align-items-center">
+			<div class="row d-flex justify-content-center mt-100 mb-100">
+
+				<h1 style="margin-top: 20"><b><center><b>Training Instance Based Influential Analysis</b></center></b></h1>
 
 
-<h3 class="ex2"><b> RESEARCH PAPERS: </b></h3>
+				<h3 style="margin-top: 20px"><b> RESEARCH PAPERS: </b></h3>
 
-<ol class="ex2">
-<h4 style="text-indent: -20px;"><b> BIG PICTURE </b></h4>
+				
+				<h5 style="margin-top: 20px"><b> Using Influence Functions </b></h5>
+				<style type="text/css">
+					.tg  {border-collapse:collapse;border-spacing:0;}
+					.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+					  overflow:hidden;padding:10px 5px;word-break:normal;}
+					.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+					  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+					.tg .tg-0lax{text-align:left;vertical-align:top}
+				</style>
+
+				<table class="tg">
+				
+					<thead>
+						<tr>
+						  <th class="tg-0lax">Title</th>
+						  <th class="tg-0lax">Authors </th>
+						  <th class="tg-0lax">Venues/Conference/Journal</th>
+						  <th class="tg-0lax">Year</th>
+						  <th class="tg-0lax">Page#</th>
+						</tr>
+					</thead> 
+
+					<tbody>
+						
+							<tr>
+							<td class="tg-0lax"><a href="https://arxiv.org/pdf/1703.04730.pdf" target="_blank">Understanding black-box predictions via influence functions. </a></td>
+							<td class="tg-0lax">Koh, P. , Percy L.</td>
+							<td class="tg-0lax">International Conference on Machine Learning.</td>
+							<td class="tg-0lax">2017</td>
+							<td class="tg-0lax"></td>
+							</tr>
+							
+							
+							<tr>
+							<td class="tg-0lax"><a href="https://arxiv.org/pdf/2012.15781.pdf">FastIF: Scalable Influence Functions for Efficient Model Interpretation and Debugging.</a></td>
+							<td class="tg-0lax">Guo, Han </td>
+							<td class="tg-0lax"></td>
+							<td class="tg-0lax"></td>
+							<td class="tg-0lax"> </td>
+							</tr>
+
+							<tr>
+							<td class="tg-0lax"><a href="https://arxiv.org/pdf/2103.11807.pdf">Data Cleansing for Deep Neural Networks with Storage-efficient Approximation of Influence Functions.</a></td>
+							<td class="tg-0lax">Suzuki, Kenji, Yoshiyuki Kobayashi, and Takuya Narihira. </td>
+							<td class="tg-0lax"> IEEE Transactions on Software Engineering</td>
+							<td class="tg-0lax"></td>
+							<td class="tg-0lax"></td>
+							</tr>
+							
+							<tr>
+								<td class="tg-0lax"><a href="https://proceedings.neurips.cc/paper/2019/file/5f14615696649541a025d3d0f8e0447f-Paper.pdf"> Data Cleansing for Models Trained with SGD. </a></td>
+								<td class="tg-0lax">Hara, Satoshi, Atsushi Nitanda, and Takanori Maehara </td>
+								<td class="tg-0lax"> IEEE Transactions on Software Engineering</td>
+								<td class="tg-0lax">2019</td>
+								<td class="tg-0lax"></td>
+							</tr>
+						
+
+					</tbody>
+				</table>
+							
+						
+				
+
+				<h5 style=" margin-top: 20px;"><b> Not Using Influence Functions </b></h5>
+
+				<table class="tg">
+				
+					<thead>
+						<tr>
+						  <th class="tg-0lax">Title</th>
+						  <th class="tg-0lax">Authors </th>
+						  <th class="tg-0lax">Venues/Conference/Journal</th>
+						  <th class="tg-0lax">Year</th>
+						  <th class="tg-0lax">Page#</th>
+						</tr>
+					</thead> 
+
+					<tbody>
+						<tr>
+							<td class="tg-0lax"><a href="https://link.springer.com/content/pdf/10.1186/1758-2946-6-32.pdf">The influence of negative training set size on machine learning-based virtual screening.</a></td>
+							<td class="tg-0lax">Kurczab, Rafał, Sabina Smusz, and Andrzej J. Bojarski.</td>
+							<td class="tg-0lax"> Journal of cheminformatics 6.1</td>
+							<td class="tg-0lax">2014</td>
+							<td class="tg-0lax"></td>
+						</tr>
 
 
-	<li><a href="https://christophm.github.io/interpretable-ml-book/influential.html">Interpretable Machine Learning-A Guide for Making Black Box Models Explainable.</a></li>
-			<p>Christoph Molnar.</p>
-			<p>Lulu. com, 2020.</p>
-	
-	<li><a href="https://arxiv.org/pdf/1703.04730.pdf">Understanding black-box predictions via influence functions. </a></li>
-		<p>Koh, Pang Wei, and Percy Liang.</p>
-		<p>International Conference on Machine Learning. PMLR, 2017.</p>	
-	
-	<li><a href="https://link.springer.com/content/pdf/10.1186/1758-2946-6-32.pdf">The influence of negative training set size on machine learning-based virtual screening.</a></li>
-		<p>Kurczab, Rafał, Sabina Smusz, and Andrzej J. Bojarski.</p>
-		<p>Journal of cheminformatics 6.1 (2014): 1-9.</p>
-		
-	<li><a href="https://arxiv.org/pdf/2012.04207.pdf">Efficient Estimation of Influence of a Training Instance.</a></li>
-		<p>Kobayashi, Sosuke, et al. </p>
-		<p>Proceedings of SustaiNLP: Workshop on Simple and Efficient Natural Language Processing. 2020.</p>
-		
-	<li><a href="https://arxiv.org/pdf/2012.15781.pdf">FastIF: Scalable Influence Functions for Efficient Model Interpretation and Debugging.</a></li>
-		<p>Guo, Han, et al. </p>
-		<p>arXiv e-prints (2020): arXiv-2012.</p>
 
-	<li><a href="https://arxiv.org/pdf/2009.09841.pdf">Finding influential instances for distantly supervised relation extraction.</a></li>
-		<p>Wang, Zifeng, et al. </p>
-		<p>arXiv preprint arXiv:2009.09841 (2020).</p>
-  
-	<li><a href="http://proceedings.mlr.press/v80/ilse18a/ilse18a.pdf">Attention-based deep multiple instance learning.</a></li>
-		<p>Ilse, Maximilian, Jakub Tomczak, and Max Welling.</p>
-		<p>International conference on machine learning. PMLR, 2018.</p>
+						<tr>
+							<td class="tg-0lax"><a href="https://arxiv.org/pdf/2012.04207.pdf">Efficient Estimation of Influence of a Training Instance.</a></td>
+							<td class="tg-0lax">Kobayashi, Sosuke</td>
+							<td class="tg-0lax">  Workshop on Simple and Efficient Natural Language Processing</td>
+							<td class="tg-0lax">2020</td>
+							<td class="tg-0lax"></td>
+						</tr>
 
-	<li><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8019879">Analyzing the training processes of deep generative models.</a></li>
-		<p>Liu, Mengchen, et al.</p>
-		<p>IEEE transactions on visualization and computer graphics 24.1 (2017): 77-87.</p>
 
-	<li><a href="https://arxiv.org/pdf/2103.11807.pdf">Data Cleansing for Deep Neural Networks with Storage-efficient Approximation of Influence Functions.</a></li>
-		<p>Suzuki, Kenji, Yoshiyuki Kobayashi, and Takuya Narihira. </p>
-		<p>arXiv e-prints (2021): arXiv-2103.</p>
+						<tr>
+							<td class="tg-0lax"><a href="https://arxiv.org/pdf/2009.09841.pdf">Finding influential instances for distantly supervised relation extraction.</a></td>
+							<td class="tg-0lax">Wang, Zifeng</td>
+							<td class="tg-0lax">  </td>
+							<td class="tg-0lax">2020</td>
+							<td class="tg-0lax"></td>
+						</tr>
 
-	<li><a href="https://www.sciencedirect.com/science/article/pii/S1574954119303498">Shapley additive explanations for NO2 forecasting.</a></li>
-		<p>García, María Vega, and José L. Aznarte. </p>
-		<p>Ecological Informatics 56 (2020): 101039.</p>
+				
+						<tr>
+							<td class="tg-0lax"><a href="http://proceedings.mlr.press/v80/ilse18a/ilse18a.pdf">Attention-based deep multiple instance learning.</a></td>
+							<td class="tg-0lax">Ilse, Maximilian, Jakub Tomczak, and Max Welling</td>
+							<td class="tg-0lax"> International conference on machine learning</td>
+							<td class="tg-0lax">2018</td>
+							<td class="tg-0lax"></td>
+						</tr>
+				
 
-	<li><a href="https://link.springer.com/chapter/10.1007/978-3-030-28730-6_4">ILIME: Local and Global Interpretable Model-Agnostic Explainer of Black-Box Decision.</a></li>
-		<p>ElShawi, Radwa, et al. </p>
-		<p>European Conference on Advances in Databases and Information Systems. Springer, Cham, 2019.</p>
+						<tr>
+							<td class="tg-0lax"><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8019879">Analyzing the training processes of deep generative models.</a></td>
+							<td class="tg-0lax">Liu, Mengchen</td>
+							<td class="tg-0lax">IEEE transactions on visualization and computer graphics </td>
+							<td class="tg-0lax">2017</td>
+							<td class="tg-0lax"></td>
+						</tr>
 
-	<li><a href="https://arxiv.org/ftp/arxiv/papers/2101/2101.06232.pdf">Towards interpreting ML-based automated malware detection models: a survey.</a></li>
-		<p>Lin, Yuzhou, and Xiaolin Chang.</p>
-		<p>arXiv e-prints (2021): arXiv-2101.</p>
-		
-	<li><a href="https://escholarship.org/content/qt3tm600q3/qt3tm600q3.pdf"> Deep Contrastive Explanation. </a></li>
-		<p>Feghahati, Seyedamirhossein.</p>
-		<p>University of California, Riverside, 2020.</p>
 
-	<li><a href="https://proceedings.neurips.cc/paper/2019/file/5f14615696649541a025d3d0f8e0447f-Paper.pdf"> Data Cleansing for Models Trained with SGD. </a></li>
-		<p>Hara, Satoshi, Atsushi Nitanda, and Takanori Maehara.</p>
-		<p>Advances in Neural Information Processing Systems 32 (2019).</p>
+						<tr>
+							<td class="tg-0lax"><a href="https://www.sciencedirect.com/science/article/pii/S1574954119303498">Shapley additive explanations for NO2 forecasting.</a></td>
+							<td class="tg-0lax">García, María Vega, and José L. Aznarte.</td>
+							<td class="tg-0lax">Ecological Informatics </td>
+							<td class="tg-0lax">2020</td>
+							<td class="tg-0lax"></td>
+						</tr>
 
-  </ol>
-    
-  
-<h3 class="ex2"><b> TOOLS: </b></h3>
+					
+						<tr>
+							<td class="tg-0lax"><a href="https://link.springer.com/chapter/10.1007/978-3-030-28730-6_4">ILIME: Local and Global Interpretable Model-Agnostic Explainer of Black-Box Decision.</a></td>
+							<td class="tg-0lax">ElShawi, Radwa </td>
+							<td class="tg-0lax">European Conference on Advances in Databases and Information Systems</td>
+							<td class="tg-0lax">2019</td>
+							<td class="tg-0lax"></td>
+						</tr>				
 
-  <ol class="ex1">
-	<li><a href="https://github.com/kohpangwei/influence-release">Influence Function</a><b>: </b>Understanding Black-box Predictions via Influence Functions <a href="https://arxiv.org/pdf/1703.04730.pdf">[Paper]</a></li>
-	<li><a href="https://github.com/salesforce/fast-influence-functions">FASTIF</a><b>: </b>FastIF: Scalable Influence Functions for Efficient Model Interpretation and Debugging <a href="https://arxiv.org/pdf/2012.15781.pdf">[Paper]</a></li>
-    <li><A href="https://github.com/sato9hara/sgd-influence">sgd-influence</a><b>: </b>Data Cleansing for Models Trained with SGD <A href="https://proceedings.neurips.cc/paper/2019/file/5f14615696649541a025d3d0f8e0447f-Paper.pdf">[Paper]</a></li>
-  </ol>
+						<tr>
+							<td class="tg-0lax"><a href="https://arxiv.org/ftp/arxiv/papers/2101/2101.06232.pdf">Towards interpreting ML-based automated malware detection models: a survey.</a></td>
+							<td class="tg-0lax">Lin, Yuzhou, and Xiaolin Chang</td>
+							<td class="tg-0lax"></td>
+							<td class="tg-0lax">2021</td>
+							<td class="tg-0lax"></td>
+						</tr>
+						
+
+				
+						<tr>
+							<td class="tg-0lax"><a href="https://escholarship.org/content/qt3tm600q3/qt3tm600q3.pdf"> Deep Contrastive Explanation. </a></td>
+							<td class="tg-0lax">Feghahati, Seyedamirhossein</td>
+							<td class="tg-0lax"></td>
+							<td class="tg-0lax">2020</td>
+							<td class="tg-0lax"></td>
+						</tr>
+					
+					</tbody>
+				
+				</table>
+										
+				<h5  style="margin-top: 20px"><b> Book: </b></h3>	
+				<table class="tg">
+				
+					<thead>
+						<tr>
+						  <th class="tg-0lax">Book Link</th>
+						  <th class="tg-0lax">Author </th>
+						  <th class="tg-0lax">Year Published</th>
+						  
+						</tr>
+					</thead>
+					<tbody> 
+						<td>
+							<a href="https://christophm.github.io/interpretable-ml-book/influential.html">Interpretable Machine Learning-A Guide for Making Black Box Models Explainable.</a></li>
+						
+						</td>
+						<td>
+							Christoph Molnar
+						</td>
+						<td>
+							2020
+						</td>
+
+					</tbody>
+				</table>
+				
+
+				<h5  style="margin-top: 20px"><b> Tools: </b></h3>
+				<table class="tg">
+				
+					<thead>
+						<tr>
+						  <th class="tg-0lax">Tool Link</th>
+						  <th class="tg-0lax">Title </th>
+						  <th class="tg-0lax">Paper</th>
+						  
+						</tr>
+					</thead>
+					<tbody> 
+
+					<tr>
+						<td><a href="https://github.com/kohpangwei/influence-release">Influence Function</a></td>
+						<td> Understanding Black-box Predictions via Influence Functions </td>
+						<td><a href="https://arxiv.org/pdf/1703.04730.pdf">[Paper]</a></td>
+					</tr>
+
+					<tr>
+						<td><a href="https://github.com/salesforce/fast-influence-functions">FASTIF</a></td>
+						<td> FastIF: Scalable Influence Functions for Efficient Model Interpretation and Debugging  </td>
+						<td><a href="https://arxiv.org/pdf/2012.15781.pdf">[Paper]</a></td>
+					</tr>
+
+					<tr>
+						<td><a href="https://github.com/sato9hara/sgd-influence">sgd-influence</a></td>
+						<td> Data Cleansing for Models Trained with SGD </td>
+						<td><a href="https://proceedings.neurips.cc/paper/2019/file/5f14615696649541a025d3d0f8e0447f-Paper.pdf">[Paper]</a></td>
+					</tr>
+					
+				
+
+				  </tbody>
+				</table>
+				
+				
+			</div>
+		</div>
+	</div>
+</section>
 
 
 </body>
